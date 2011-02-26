@@ -12,9 +12,17 @@
 <body>
 <form:form name="titleForm" commandName="SelectTitleCommand">
 	<form:hidden path="title" />
-	<div id="title">${SelectTitleCommand.title}</div>
-	<button type="button" value="skip" onclick="javascript:submitForm(this.value)">I'll Pass!</button>
-	<button type="button" value="play" onclick="javascript:submitForm(this.value)">I'm Game!</button>
+	<table align="center"  >
+		<tr>
+			<td valign="middle">
+			<div id="title">${SelectTitleCommand.title}</div>
+			<button type="button" value="skip"
+				onclick="javascript:submitForm(this.value)">I'll Pass!</button>
+			<button type="button" value="play"
+				onclick="javascript:submitForm(this.value)">I'm Game!</button>
+			</td>
+		</tr>
+	</table>
 </form:form>
 </body>
 </html>
