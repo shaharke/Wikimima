@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 
 import com.wikimima.wiki.comm.WikipediaFacade;
 
-@Service
-public class WikipediaServiceImpl implements WikipediaService {
+@Service("WikipediaService")
+public class WikipediaTitleService implements TitleGenerationService {
 	
 	@Autowired
 	private WikipediaFacade wikiApi; 

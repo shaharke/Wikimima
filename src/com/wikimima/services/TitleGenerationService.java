@@ -1,6 +1,6 @@
 package com.wikimima.services;
 
-public interface WikipediaService {
+public interface TitleGenerationService {
 	
 	public String getRandomTitle() throws TitleRetreivalException;
 
